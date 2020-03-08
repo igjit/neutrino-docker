@@ -22,6 +22,6 @@ NEUTRINO/model/KIRITAN:
 	cp -r NEUTRINO-*/KIRITAN NEUTRINO/model/
 
 NEUTRINO/output/%_syn.wav: NEUTRINO/score/musicxml/%.musicxml
-	bin/neutrino.sh -n $(notdir $(basename $^))
+	bin/neutrino.sh -n $(notdir $(basename $^)) -s play
 
 .PHONY: wav build kiritan
